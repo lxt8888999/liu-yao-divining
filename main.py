@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-openai.api_type = os.getenv("OPENAI_API_TYPE")
-openai.api_base = os.getenv("OPENAI_API_BASE")
-openai.api_version = os.getenv("OPENAI_API_VERSION")
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_type = "gpt-3.5-turbo"
+openai.api_base = "https://api.openai.com"
+openai.api_version = "v1"
+openai.api_key = "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"
 
 gua_dict = {
     '阳阳阳': '乾',
